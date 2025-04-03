@@ -5,6 +5,6 @@ Configure Java in Environment variables,
 Install eclipse IDE,
 Clone the Respository,
 Now the setup should be completed.
-To Run the tests, Click on Run button.
+To Run the tests, Open the file "LoginAPI.java", and click on Run button.
 Or Open the file "LoginAPI.java", right click on the file, Select Option Run As->Testng Test
 
