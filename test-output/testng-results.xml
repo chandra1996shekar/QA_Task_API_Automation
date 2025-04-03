@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="3" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-04-03T13:18:51 IST" name="Default suite" finished-at="2025-04-03T13:18:55 IST" duration-ms="3348">
+    <groups>
+    </groups>
+    <test started-at="2025-04-03T13:18:51 IST" name="Default test" finished-at="2025-04-03T13:18:55 IST" duration-ms="3348">
+      <class name="APITest.LoginAPI">
+        <test-method is-config="true" signature="setup()[pri:0, instance:APITest.LoginAPI@6c284af]" started-at="2025-04-03T13:18:51 IST" name="setup" finished-at="2025-04-03T13:18:52 IST" duration-ms="263" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="APILogin()[pri:0, instance:APITest.LoginAPI@6c284af]" started-at="2025-04-03T13:18:52 IST" name="APILogin" finished-at="2025-04-03T13:18:53 IST" duration-ms="1571" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- APILogin -->
+        <test-method signature="Negative_NoWarehouseexist()[pri:0, instance:APITest.LoginAPI@6c284af]" started-at="2025-04-03T13:18:53 IST" name="Negative_NoWarehouseexist" finished-at="2025-04-03T13:18:54 IST" duration-ms="446" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Negative_NoWarehouseexist -->
+        <test-method signature="Negative_TestCaseWithInvalidToken()[pri:0, instance:APITest.LoginAPI@6c284af]" started-at="2025-04-03T13:18:54 IST" name="Negative_TestCaseWithInvalidToken" finished-at="2025-04-03T13:18:54 IST" duration-ms="433" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Negative_TestCaseWithInvalidToken -->
+        <test-method signature="Negative_TestCaseWithMissingQueryParametr()[pri:0, instance:APITest.LoginAPI@6c284af]" started-at="2025-04-03T13:18:54 IST" name="Negative_TestCaseWithMissingQueryParametr" finished-at="2025-04-03T13:18:55 IST" duration-ms="341" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[1 expectation failed.
+Expected status code <400> but was <200>.
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 1 expectation failed.
+Expected status code <400> but was <200>.
+
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+at rest.assured@5.4.0/io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+at rest.assured@5.4.0/io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+at rest.assured@5.4.0/io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+at rest.assured@5.4.0/io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
+at io.restassured.specification.ResponseSpecification$statusCode$1.callCurrent(Unknown Source)
+at rest.assured@5.4.0/io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
+at rest.assured@5.4.0/io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+at QATask_APITest/APITest.LoginAPI.Negative_TestCaseWithMissingQueryParametr(LoginAPI.java:70)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng@7.10.1/org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng@7.10.1/org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng@7.10.1/org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng@7.10.1/org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng@7.10.1/org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng@7.10.1/org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng@7.10.1/org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng@7.10.1/org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng@7.10.1/org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng@7.10.1/org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng@7.10.1/org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng@7.10.1/org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng@7.10.1/org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng@7.10.1/org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng@7.10.1/org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng@7.10.1/org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng@7.10.1/org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng@7.10.1/org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng@7.10.1/org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng@7.10.1/org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Negative_TestCaseWithMissingQueryParametr -->
+        <test-method signature="Warehouse_APITest()[pri:0, instance:APITest.LoginAPI@6c284af]" started-at="2025-04-03T13:18:55 IST" name="Warehouse_APITest" finished-at="2025-04-03T13:18:55 IST" duration-ms="260" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [default] but found [null]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [default] but found [null]
+at org.testng@7.10.1/org.testng.Assert.fail(Assert.java:111)
+at org.testng@7.10.1/org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng@7.10.1/org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng@7.10.1/org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng@7.10.1/org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng@7.10.1/org.testng.Assert.assertEquals(Assert.java:666)
+at QATask_APITest/APITest.LoginAPI.Warehouse_APITest(LoginAPI.java:47)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng@7.10.1/org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng@7.10.1/org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng@7.10.1/org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng@7.10.1/org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng@7.10.1/org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng@7.10.1/org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng@7.10.1/org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng@7.10.1/org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng@7.10.1/org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng@7.10.1/org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng@7.10.1/org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng@7.10.1/org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng@7.10.1/org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng@7.10.1/org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng@7.10.1/org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng@7.10.1/org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng@7.10.1/org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng@7.10.1/org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng@7.10.1/org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng@7.10.1/org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Warehouse_APITest -->
+      </class> <!-- APITest.LoginAPI -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
